@@ -5,14 +5,13 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ExerciseSchema = new Schema({
-  cardioName: String,
+  type: String,
   name: String,
-  weight: String,
-  sets: String,
-  reps: String,
   duration: String,
-  resistanceDuration: String,
-  distance: String,
+  weight: String,
+  reps: String,
+  sets: String,
+  day: Date,
 });
 
 const Exercise = mongoose.model("Exercise", ExerciseSchema);
