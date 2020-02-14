@@ -10,7 +10,7 @@ router.post("/api/workouts", (req, res) => {
       res.json(err);
     });
 });
-//! i dont think this does anything
+
 router.put("/api/workouts/:id", ({ body, params }, res) => {
   Workout.findByIdAndUpdate(params.id, {
     $push: { exercises: body },
@@ -18,7 +18,7 @@ router.put("/api/workouts/:id", ({ body, params }, res) => {
     .then(workout => res.json(workout))
     .catch(err => res.json(err));
 });
-//!
+
 router.get("/api/workouts/range", (req, res) => {
   Workout.find({}, (err, stats) => {
     if (err) {
