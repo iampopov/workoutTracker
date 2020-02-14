@@ -8,8 +8,6 @@ For this web app I created Mongo database with a Mongoose schema and handled rou
 
 ## Business Context
 
-A consumer will reach their fitness goals quicker when they track their workout progress.
-
 ## Functionality
 
 When the user loads the page, they are given the option to create a new workout, or continue with their last workout.
